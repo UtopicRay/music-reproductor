@@ -1,0 +1,50 @@
+---
+import ListMusic from "./ListMusic.astro";
+---
+
+<div class="rounded-lg p-5 bg-slate-800 col-span-2">
+  <div class="flex mb-4 text-sm">
+    <a class="mr-auto text-white">Genres</a>
+    <a class="ml-auto">See All</a>
+  </div>
+  <nav>
+    <ul class="flex flex-col gap-y-4">
+      <li>
+        <ListMusic
+          img="img/song-1.png"
+          title="Sunrise"
+          artist="Lila Rivera"
+          time="03:45"
+          number="01"
+        />
+      </li>
+      <li>
+        <ListMusic
+          img="img/song-2.png"
+          title="Sunrise"
+          artist="Tyde Brennan"
+          time="03:45"
+          number="02"
+        />
+      </li>
+      <li>
+        <ListMusic
+          img="img/song-3.png"
+          title="Breeze"
+          artist="Sola Kim"
+          time="03:45"
+          number="03"
+        />
+      </li>
+      <li>
+        <ListMusic
+          img="img/song-4.png"
+          title="Twilight"
+          artist="Jett Lawsonn"
+          time="03:17"
+          number="04"
+        />
+      </li>
+    </ul>
+  </nav>
+</div>
