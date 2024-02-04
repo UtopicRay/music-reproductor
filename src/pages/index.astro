@@ -1,13 +1,26 @@
 ---
-import Header from '../components/Header.astro';
-import Layout from '../layouts/Layout.astro';
-import SideBar from '../components/SideBar.astro';
-import Card1 from '../components/Card1.astro';
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import SideBar from "../components/SideBar.astro";
+import Card1 from "../components/Card1.astro";
+import Card2 from "../components/Card2.astro";
+import Intro from "../components/Intro.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<SideBar/>
-	<Header/>
-	<Card1/>
+  <SideBar />
+  <main class="main-container">
+    <Header />
+    <Intro/>
+    <div class="grid grid-flow-row-dense grid-cols-3 gap-3">
+    <Card1 />
+    <Card2/>
+  </div>
+  </main>
 </Layout>
-
+<style>
+  .main-container{
+    width: 900px;
+    padding:1rem;
+  }
+</style>
