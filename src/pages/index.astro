@@ -30,12 +30,6 @@ import Music from "../components/Music.astro";
     </main>
   </div>
 </Layout>
-<style>
-  .main-container {
-    width: 900px;
-    padding: 1rem;
-  }
-</style>
 <script>
   const x = document.querySelector(".ocultar");
   const y = document.querySelector(".mostrar");
@@ -45,5 +39,6 @@ import Music from "../components/Music.astro";
   });
   y?.addEventListener("click", () => {
     z?.classList.remove("hidden");
+    z?.classList.add("flex");
   });
 </script>
