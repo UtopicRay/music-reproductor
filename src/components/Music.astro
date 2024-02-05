@@ -1,5 +1,5 @@
-<div>
-  <ul class="flex justify-end items-center gap-3">
+<div class="max-w-full h-auto flex justify-center sm:justify-end items-center">
+  <ul class="flex justify-center items-center gap-3">
     <i class="bx bxs-bell"></i>
     <i class="bx bxs-cog"></i>
     <li class="flex bg-gray-800 rounded-xl items-center">
@@ -14,10 +14,10 @@
     </li>
   </ul>
 </div>
-<div class="rounded-lg bg-slate-800 mt-4">
+<div class="rounded-lg bg-slate-800 mt-5 w-full">
   <div class="flex p-4 justify-between">
     <a>Player</a>
-    <a>music</a>
+    <i class='bx bxs-playlist text-2xl' ></i>
   </div>
   <div class="flex flex-col justify-center items-center">
     <img class="rounded-lg w-52" src="/img/player.png" alt="" />
@@ -27,18 +27,18 @@
     <input class="mb-4" min="0" max="3" type="range" />
   </div>
   <div class="flex flex-col bg-blue-400 w-full rounded-lg">
-    <ul class="flex justify-center items-center gap-3 py-6 text-3xl">
-      <i class="bx bx-repeat"></i>
-      <i class="bx bx-skip-previous"></i>
+    <ul class="flex justify-center items-center gap-3 py-6 lg:text-3xl text-3xl md:text-xl ">
+      <i class="bx bx-repeat hover:scale-110 duration-200"></i>
+      <i class="bx bx-skip-previous hover:scale-110 duration-200"></i>
       <div class="bg-white p-2 flex justify-center items-center rounded-xl">
-        <i class="bx bx-play text-blue-400"></i>
+        <i class="bx bx-play text-blue-400 hover:scale-110 duration-200"></i>
       </div>
-      <i class="bx bx-skip-next"></i>
-      <i class="bx bx-transfer-alt"></i>
+      <i class="bx bx-skip-next hover:scale-110 duration-200"></i>
+      <i class="bx bx-transfer-alt hover:scale-110 duration-200"></i>
     </ul>
     <div class="flex justify-center items-center flex-col mb-2">
-      <i class="bx bxs-chevron-up"></i>
-      <h3 class="text-xl font-bold">Lyrics</h3>
+      <i class="bx bxs-chevron-up hover:scale-110 duration-200"></i>
+      <h3 class="text-xl font-bold hover:scale-110 duration-200">Lyrics</h3>
     </div>
   </div>
 </div>

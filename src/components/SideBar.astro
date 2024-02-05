@@ -1,85 +1,102 @@
 <aside>
   <nav
-    class="flex flex-col bg-gray-800 w-48 h-screen
-    justify-center [&&>ul]:ml-5 gap-4"
+    class="md:flex hidden flex-col bg-gray-800 w-48 sidebar md:relative absolute
+     [&&>ul]:ml-5 gap-4"
   >
-    <h2 class="ml-4">RReproductor</h2>
+    <div class="flex ml-5 gap-2 items-center mt-4">
+      <button
+        class="md:hidden border-[1px] w-10 flex justify-center items-center h-8 hover:scale-110 duration-200 ocultar"
+      >
+        <i class="bx bx-exit text-xl"></i>
+      </button>
+      <h2
+        class="uppercase hover:text-purple-700 hover:scale-110 duration-200"
+      >
+       Music
+      </h2>
+    </div>
 
     <ul class="flex flex-col gap-3">
-      <h3 class="text-gray-500 text-xl">Menu</h3>
+      <h3 class="text-gray-500 text-lg uppercase">Menu</h3>
       <li>
         <i
-          class="bx bxs-bolt-circle flex hover:text-purple-700 hover:scale-110 gap-2"
+          class="bx bxs-bolt-circle flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Explore</i
         >
       </li>
       <li>
         <i
-          class="bx bxs-volume-full flex hover:text-purple-700 hover:scale-110 gap-2"
+          class="bx bxs-volume-full flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Genres</i
         >
       </li>
       <li>
-        <i class="bx bxs-disc flex hover:text-purple-700 hover:scale-110 gap-2"
+        <i
+          class="bx bxs-disc flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Albums</i
         >
       </li>
       <li>
         <i
-          class="bx bxs-microphone flex hover:text-purple-700 hover:scale-110 gap-2"
+          class="bx bxs-microphone flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Artists</i
         >
       </li>
       <li>
-        <i class="bx bxs-radio flex hover:text-purple-700 hover:scale-110 gap-2"
+        <i
+          class="bx bxs-radio flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Poddcasts</i
         >
       </li>
     </ul>
-    <ul class="flex flex-col gap-2">
-      <h2 class="text-gray-500 text-xl">Librery</h2>
-      <i class='bx bx-undo flex hover:text-purple-700 hover:scale-110 gap-2'>Recent</i>
+    <ul class="flex flex-col gap-3">
+      <h2 class="text-gray-500 text-lg uppercase">Library</h2>
+      <i
+        class="bx bx-undo flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
+        >Recent</i
+      >
       <li>
         <i
-          class="bx bxs-photo-album flex hover:text-purple-700 hover:scale-110 gap-2"
+          class="bx bxs-photo-album flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Album</i
         >
       </li>
       <li>
-        <i class="bx bxs-heart flex hover:text-purple-700 hover:scale-110 gap-2"
+        <i
+          class="bx bxs-heart flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Favorites</i
         >
       </li>
       <li>
         <i
-          class="bx bxs-folder flex hover:text-purple-700 hover:scale-110 gap-2"
+          class="bx bxs-folder flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Local</i
         >
       </li>
     </ul>
-    <ul class="flex flex-col gap-2">
-      <h3 class="text-gray-500 text-xl">Playlist</h3>
+    <ul class="flex flex-col gap-3">
+      <h3 class="text-gray-500 text-lg uppercase">Playlist</h3>
       <li>
         <i
-          class="bx bxs-plus-square flex hover:text-purple-700 hover:scale-110 gap-2"
+          class="bx bxs-plus-square flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Create New</i
         >
       </li>
       <li>
         <i
-          class="bx bxs-caret-right-circle flex hover:text-purple-700 hover:scale-110 gap-2"
+          class="bx bxs-caret-right-circle flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Best 2023</i
         >
       </li>
       <li>
         <i
-          class="bx bxs-caret-right-circle flex hover:text-purple-700 hover:scale-110 gap-2"
+          class="bx bxs-caret-right-circle flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Best 2022</i
         >
       </li>
       <li>
         <i
-          class="bx bxs-caret-right-circle flex hover:text-purple-700 hover:scale-110 gap-2"
+          class="bx bxs-caret-right-circle flex hover:text-purple-700 hover:scale-110 gap-2 duration-200"
           >Kael Fischer</i
         >
       </li>
@@ -87,8 +104,10 @@
     <div
       class="flex flex-col justify-center items-center bg-slate-900 m-2 max-w-[95%] rounded-lg border-gray-700 border-[2px]"
     >
-      <div class="flex justify-center items-center bg-slate-800 w-full"
-      style="border-radius: 8px 8px 0px 0px;">
+      <div
+        class="flex justify-center items-center bg-slate-800 w-full"
+        style="border-radius: 8px 8px 0px 0px;"
+      >
         <img
           class="w-10 rounded-xl m-2"
           src="/img/profile.png"

@@ -1,12 +1,21 @@
-<header>
+<header class="w-full">
   <nav class="uppercase w-full my-4 flex justify-between">
-    <div class="flex gap-3 text-gray-500">
+    <div
+      class="flex gap-4 text-gray-500 hover:[&&>a]:duration-300 hover:[&&>a]:scale-110 hover:[&&>a]:text-purple-600 hover:[&&>a]:transition-all"
+    >
+      <button
+        class="md:hidden border-[1px] w-10 flex justify-center mx-auto items-center h-8 mostrar hover:scale-110 duration-200"
+      >
+        <i class="bx bx-menu text-2xl"></i>
+      </button>
       <a>Music</a>
       <a>Live</a>
       <a>Podcast</a>
     </div>
-    <div class="w-full ml-20">
-      <button class="flex w-full border-[2px] border-gray-700 bg-gray-800 rounded-lg px-3 py-1 gap-2">
+    <div class="w-full sm:ml-10 ml-3">
+      <button
+        class="flex w-full border-[2px] border-gray-700 bg-gray-800 rounded-lg px-2 py-1 gap-2"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-search"
@@ -23,7 +32,7 @@
             d="M21 21l-6 -6"></path></svg
         >
         <input
-          class="bg-transparent border-none outline-none"
+          class="bg-transparent border-none outline-none w-full "
           placeholder="Find your music"
         /></button
       >
