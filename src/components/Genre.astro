@@ -6,6 +6,6 @@ interface Props {
 const { color, genre } = Astro.props;
 ---
 
-<div class={`flex justify-center items-center w-24 h-20 ${color} text-center text-white rounded-lg font-bold`}>
+<div class={`flex justify-center items-center w-24 h-20 ${color} text-center text-white rounded-lg font-bold hover:scale-110 duration-150`}>
   <h1>{genre}</h1>
 </div>
