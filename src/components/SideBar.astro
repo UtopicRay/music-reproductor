@@ -1,71 +1,106 @@
-<header>
-  <div>
-    <nav
-      class="flex flex-col gap-4 hover:[&&>ul>li>span]: bg-gray-800 w-48 h-screen
-    justify-center [&&>ul]:ml-5"
+<aside>
+  <nav
+    class="flex flex-col bg-gray-800 w-48 h-screen
+    justify-center [&&>ul]:ml-5 gap-4"
+  >
+    <h2 class="ml-4">RReproductor</h2>
+
+    <ul class="flex flex-col gap-3">
+      <h3 class="text-gray-500 text-xl">Menu</h3>
+      <li>
+        <i
+          class="bx bxs-bolt-circle flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Explore</i
+        >
+      </li>
+      <li>
+        <i
+          class="bx bxs-volume-full flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Genres</i
+        >
+      </li>
+      <li>
+        <i class="bx bxs-disc flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Albums</i
+        >
+      </li>
+      <li>
+        <i
+          class="bx bxs-microphone flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Artists</i
+        >
+      </li>
+      <li>
+        <i class="bx bxs-radio flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Poddcasts</i
+        >
+      </li>
+    </ul>
+    <ul class="flex flex-col gap-2">
+      <h2 class="text-gray-500 text-xl">Librery</h2>
+      <i class='bx bx-undo flex hover:text-purple-700 hover:scale-110 gap-2'>Recent</i>
+      <li>
+        <i
+          class="bx bxs-photo-album flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Album</i
+        >
+      </li>
+      <li>
+        <i class="bx bxs-heart flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Favorites</i
+        >
+      </li>
+      <li>
+        <i
+          class="bx bxs-folder flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Local</i
+        >
+      </li>
+    </ul>
+    <ul class="flex flex-col gap-2">
+      <h3 class="text-gray-500 text-xl">Playlist</h3>
+      <li>
+        <i
+          class="bx bxs-plus-square flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Create New</i
+        >
+      </li>
+      <li>
+        <i
+          class="bx bxs-caret-right-circle flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Best 2023</i
+        >
+      </li>
+      <li>
+        <i
+          class="bx bxs-caret-right-circle flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Best 2022</i
+        >
+      </li>
+      <li>
+        <i
+          class="bx bxs-caret-right-circle flex hover:text-purple-700 hover:scale-110 gap-2"
+          >Kael Fischer</i
+        >
+      </li>
+    </ul>
+    <div
+      class="flex flex-col justify-center items-center bg-slate-900 m-2 max-w-[95%] rounded-lg border-gray-700 border-[2px]"
     >
-      <h2 class="ml-4">RReproductor</h2>
-      <ul class="flex flex-col gap-2">
-        <h3 class="text-gray-500 text-xl">Menu</h3>
-        <i class="bx bxs-bolt-circle"
-          ><span class="ml-2 hover:text-purple-700 hover:scale-125"
-            >Explore</span
-          ></i
+      <div class="flex justify-center items-center bg-slate-800 w-full"
+      style="border-radius: 8px 8px 0px 0px;">
+        <img
+          class="w-10 rounded-xl m-2"
+          src="/img/profile.png"
+          alt="Foto avatar"
+        />
+        <p class="text-sm mr-1">Ray Rendon Mesa</p>
+      </div>
+      <div class="rounded-lg p-1">
+        <i class="bx bx-globe text-gray-400 text-sm flex gap-1"
+          >Playing On Device</i
         >
-        <i class="bx bxs-volume-full"
-          ><span class="ml-2 hover:text-purple-700 hover:scale-125">Genres</span
-          ></i
-        >
-        <i class="bx bxs-disc"
-          ><span class="ml-2 hover:text-purple-700 hover:scale-125">Albums</span
-          ></i
-        >
-        <i class="bx bxs-microphone">
-          <span class="ml-2 hover:text-purple-700 hover:scale-125">Artists</span
-          ></i
-        >
-        <i class="bx bxs-radio"
-          ><span class="ml-2 hover:text-purple-700 hover:scale-125"
-            >Poddcasts</span
-          ></i
-        >
-      </ul>
-      <ul>
-        <h2 class="text-gray-500 text-xl">Librery</h2>
-        <li>
-          <span class="ml-2 hover:text-purple-700 hover:scale-125">Recent</span>
-        </li>
-        <li>
-          <span class="ml-2 hover:text-purple-700 hover:scale-125">Album</span>
-        </li>
-        <li>
-          <span class="ml-2 hover:text-purple-700 hover:scale-125"
-            >Favorites</span>
-        </li>
-        <i class="bx bxs-folder"
-          ><span class="ml-2 hover:text-purple-700 hover:scale-125">Local</span
-          ></i
-        >
-      </ul>
-      <ul>
-        <h3 class="text-gray-500 text-xl">Playlist</h3>
-        <li>
-          <span class="ml-2 hover:text-purple-700 hover:scale-125"
-            >Create New</span>
-        </li>
-        <li>
-          <span class="ml-2 hover:text-purple-700 hover:scale-125"
-            >Best 2023</span>
-        </li>
-        <li>
-          <span class="ml-2 hover:text-purple-700 hover:scale-125"
-            >Best 2022</span>
-        </li>
-        <li>
-          <span class="ml-2 hover:text-purple-700 hover:scale-125"
-            >Kael Fischer</span>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+      </div>
+    </div>
+  </nav>
+</aside>

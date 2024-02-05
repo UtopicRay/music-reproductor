@@ -5,22 +5,30 @@ import SideBar from "../components/SideBar.astro";
 import Card1 from "../components/Card1.astro";
 import Card2 from "../components/Card2.astro";
 import Intro from "../components/Intro.astro";
+import Music from "../components/Music.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <SideBar />
-  <main class="main-container">
-    <Header />
-    <Intro/>
-    <div class="grid grid-flow-row-dense grid-cols-3 gap-3">
-    <Card1 />
-    <Card2/>
+<Layout title="Reproductor de Música">
+  <div class="flex">
+    <SideBar />
+    <main class="grid grid-flow-col-dense grid-cols-3 p-4 gap-4">
+      <section class="col-span-2">
+        <Header />
+        <Intro />
+        <div class="grid grid-flow-row-dense grid-cols-3 gap-3">
+          <Card1 />
+          <Card2 />
+        </div>
+      </section>
+      <section>
+        <Music/>
+      </section>
+    </main>
   </div>
-  </main>
 </Layout>
 <style>
-  .main-container{
+  .main-container {
     width: 900px;
-    padding:1rem;
+    padding: 1rem;
   }
 </style>

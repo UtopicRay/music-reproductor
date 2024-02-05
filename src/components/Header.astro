@@ -1,36 +1,32 @@
-<div>
-  <nav class="uppercase w-full my-2">
-    <ul class="flex flex-row w-full gap-3">
-      <li>Music</li>
-      <li>Live</li>
-      <li>Podcast</li>
-      <li class="ml-auto">
-        <button
-          class="flex items-center w-full border-[2px] rounded-lg px-3 py-1"
-          ><a class="mr-2">Search</a>
-          <span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-search"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path
-                d="M21 21l-6 -6"></path></svg
-            ></span
-          >
-          <input
-            class="bg-transparent border-none"
-            placeholder="Find your music"
-          /></button
+<header>
+  <nav class="uppercase w-full my-4 flex justify-between">
+    <div class="flex gap-3 text-gray-500">
+      <a>Music</a>
+      <a>Live</a>
+      <a>Podcast</a>
+    </div>
+    <div class="w-full ml-20">
+      <button class="flex w-full border-[2px] border-gray-700 bg-gray-800 rounded-lg px-3 py-1 gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-search"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path
+            d="M21 21l-6 -6"></path></svg
         >
-      </li>
-    </ul>
+        <input
+          class="bg-transparent border-none outline-none"
+          placeholder="Find your music"
+        /></button
+      >
+    </div>
   </nav>
-</div>
+</header>
